@@ -1,14 +1,15 @@
 # -*- coding:utf-8 -*-
-
 from __future__ import division
+
 import numpy as np
+
 
 def sigmoid(X):
     sig = [1.0 / float(1.0 + np.exp(-x)) for x in X]
     return sig
 
 def to_categorical_single_class(cl):
-    y = np.zeros(183)
+    y = np.zeros(202)
 
     for i in range(len(cl)):
         y[cl[i]] = 1
@@ -37,7 +38,7 @@ def cail_evaluator(predict_labels_list, marked_labels_list):
     fn_list = []
     f1_list = []
     for i in range(num_class):  # 类别个数
-
+        # print('i: ', i)
         tp = 0.0  # predict=1, truth=1
         fp = 0.0  # predict=1, truth=0
         fn = 0.0  # predict=0, truth=1
@@ -64,6 +65,7 @@ def cail_evaluator(predict_labels_list, marked_labels_list):
         f1 = 0.0
         if precision + recall > 0:
             f1 = 2.0 * precision * recall / (precision + recall)
+        # print('f1: ', f1)
         tp_list.append(tp)
         fp_list.append(fp)
         fn_list.append(fn)
