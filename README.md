@@ -1,6 +1,6 @@
 # 中国法研杯比赛
 
-# 法律数据集
+## 法律数据集
 
 ### 文件组成
 **cail2018_big.json**: 171w
@@ -61,9 +61,24 @@ Python包：jieba。
 |python|3.5.0|
 |tensorflow-gpu|1.4.0|
 
+## 代码运行
+law_id.py --> embed2ndarray.py --> fact2dic_law2id.py --> fact2words.py --> word2id.py --> batch_data.py
+
+train.py --> predict.py
+
 ## 结果
 任务一:
 42	shelley	86.91	85.34	85.81
 
 任务二:
 41	shelley	84.63	82.87	83.40
+
+## 参考文献
+（1）TextCNN：
+Kim Y. Convolutional Neural Networks for Sentence Classification[J]. Eprint Arxiv, 2014.<br/>
+Conneau A, Schwenk H, Barrault L, et al. Very Deep Convolutional Networks for Text Classification[J]. 2017:1107-1116.
+Szegedy C, Liu W, Jia Y, et al. Going deeper with convolutions[J]. 2014:1-9.<br/>
+
+（2）Attention：
+Yang Z, Yang D, Dyer C, et al. Hierarchical Attention Networks for Document Classification[C]// Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2017:1480-1489.<br/>
+
