@@ -76,6 +76,7 @@ train.py --> predict.py
 ## 参考文献
 （1）TextCNN：
 Kim Y. Convolutional Neural Networks for Sentence Classification[J]. Eprint Arxiv, 2014.<br/>
+
 Conneau A, Schwenk H, Barrault L, et al. Very Deep Convolutional Networks for Text Classification[J]. 2017:1107-1116.
 Szegedy C, Liu W, Jia Y, et al. Going deeper with convolutions[J]. 2014:1-9.<br/>
 
