@@ -1,3 +1,7 @@
+更多模型和代码，参考：https://github.com/shelleyHLX/text-classification
+:) 
+嗷嗷嗷，有缘再见呀。。。。。。。
+
 # 中国法研杯比赛
 
 ## 法律数据集
